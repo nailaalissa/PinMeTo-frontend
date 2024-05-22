@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Widget() {
   const [companyName, setCompanyName] = useState('lexicon');
   const [iframeSrc, setIframeSrc] = useState(
-    `http://localhost:3000/MapContainer?companyName=lexicon`,
+    `https://pinmeto-frontend-24.onrender.com/MapContainer?companyName=lexicon`,
   );
   const [showLink, setShowLink] = useState(false);
 
@@ -12,7 +12,9 @@ export default function Widget() {
   };
 
   const generateIframeLink = () => {
-    setIframeSrc(`http://localhost:3000/MapContainer?companyName=${companyName}`);
+    setIframeSrc(
+      `https://pinmeto-frontend-24.onrender.com/MapContainer?companyName=${companyName}`,
+    );
     setShowLink(true);
   };
 
@@ -37,8 +39,9 @@ export default function Widget() {
               <br />
               <br />
               <p className="widget">
-                &lt;iframe src="{`http://localhost:3000/MapContainer?companyName=${companyName}`}"
-                title="Widget" width="100%" height="600"&gt;&lt;/iframe&gt;
+                &lt;iframe src="
+                {`https://pinmeto-frontend-24.onrender.com/MapContainer?companyName=${companyName}`}
+                " title="Widget" width="100%" height="600"&gt;&lt;/iframe&gt;
               </p>
             </h4>
             <iframe
