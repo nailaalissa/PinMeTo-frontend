@@ -21,7 +21,7 @@ const AddMapbox = () => {
     fetch('https://pinmeto-backend-1.onrender.com/mapApi')
       .then((res) => res.json())
       .then((data) => {
-        // console.log('accessTokenMap received:', data);
+        //console.log('accessTokenMap received:', data);
         if (data.mapboxApiToken) {
           mapboxgl.accessToken = data.mapboxApiToken;
           setMapboxApiToken(data.mapboxApiToken);
