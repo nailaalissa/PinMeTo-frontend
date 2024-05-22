@@ -102,7 +102,7 @@ export default function Widget() {
               </p>
             </h4>
             <iframe
-              src={iframeSrc}
+              src={`https://pinmeto-widget.onrender.com/MapContainer?companyName=${companyName}`}
               title="Widget"
               width="100%"
               height="600"
