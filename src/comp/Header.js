@@ -15,11 +15,11 @@ const Header = () => {
                 Widget
               </NavLink>
             </li>
-            <li className="main-list">
-              <NavLink className="main-link" to="/MapContainer?companyName=">
+            {/* <li className="main-list">
+              <NavLink className="main-link" to="/MapContainer">
                 MapContainer
               </NavLink>
-            </li>
+            </li> */}
             <li className="main-list">
               <NavLink className="main-link" to="/Map">
                 Map

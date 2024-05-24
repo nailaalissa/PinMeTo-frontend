@@ -64,6 +64,7 @@ export default function Widget() {
   const [iframeSrc, setIframeSrc] = useState(
     `https://pinmeto-widget.onrender.com/MapContainer?companyName=lexicon`,
   );
+  console.log(iframeSrc);
   const [showLink, setShowLink] = useState(false);
 
   const handleCompanyChange = (e) => {
@@ -102,7 +103,7 @@ export default function Widget() {
               </p>
             </h4>
             <iframe
-              src={`https://pinmeto-widget.onrender.com/MapContainer?companyName=${companyName}`}
+              src={iframeSrc}
               title="Widget"
               width="100%"
               height="600"
