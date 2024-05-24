@@ -62,7 +62,7 @@ import React, { useState } from 'react';
 export default function Widget() {
   const [companyName, setCompanyName] = useState('lexicon');
   const [iframeSrc, setIframeSrc] = useState(
-    `https://pinmeto-widget.onrender.com/MapContainer?companyName=lexicon`,
+    `https://pinmeto-frontend-test.onrender.com/MapContainer?companyName=lexicon`,
   );
   console.log(iframeSrc);
   const [showLink, setShowLink] = useState(false);
@@ -72,7 +72,10 @@ export default function Widget() {
   };
 
   const generateIframeLink = () => {
-    setIframeSrc(`https://pinmeto-widget.onrender.com/MapContainer?companyName=${companyName}`);
+    setIframeSrc(
+      `https://pinmeto-frontend-test.onrender.com/MapContainer?companyName=${companyName}`,
+    );
+    // setIframeSrc(`http://localhost:3000/MapContainer?companyName=${companyName}`);
     setShowLink(true);
   };
 
